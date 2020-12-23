@@ -6,7 +6,7 @@
   <link rel="stylesheet"href="css/style.css">
 </head>
 <body>
-<header>Simple CMS by PHP+PostgreSQL</header>
+<header><h1>Simple CMS by PHP+PostgreSQL</h1></header>
 <div id="sidebar">
   <div class="side-focus">記事一覧</div>
   <a class="sidebut" href="add.php">記事を追加</a>
