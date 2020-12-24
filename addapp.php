@@ -1,6 +1,6 @@
 <?php
 try {
-  $db = new PDO('pgsql:dbname=vagrant;host=localhost','vagrant','password');
+  $db = new PDO('pgsql:dbname=ubuntu;host=localhost','ubuntu','password');
   $rowid = $db->query('SELECT max(id) FROM news');
   while($row = $rowid->fetch()) {
     $n_id = $row['max'] + 1;
@@ -19,7 +19,7 @@ try {
     ':n_m'=>$_POST['content']
   ));
   unset($db);
-  header("Location: /php-crud");
+  header("Location: /");
 } catch (Exception $e) {
   echo $e->getMessage();
 }

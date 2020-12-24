@@ -14,13 +14,28 @@
 </div>
 <div id="main">
   <form action="addapp.php" method="POST">
-    Title: <input type="text" name="title" /><br />
-    Author: <input type="text" name="author" /><br />
-    url: <input type="text" name="url" /><br />
-    img: <input type="text" name="imgurl" /><br />
-    Published time: <input type="text" name="time" /><br />
-    Content: <textarea name="content"></textarea>
-    <button type="submit">Submit</button>
+  <table>
+  <tr>
+    <td>Title:</td> <td colspan="3"><input type="text" name="title" /></td>
+  </tr>
+  <tr>
+  <td>Author:</td> <td colspan="3"><input type="text" name="author" /></td>
+  </tr>
+  <tr>
+  <td>url:</td> <td colspan="3"><input type="text" name="url" /></td>
+  </tr>
+  <tr>
+  <td>img:</td> <td colspan="3"><input type="text" name="imgurl" /></td>
+  </tr>
+  <tr>
+  <td>Published time:</td colspan="3"> <td><input type="text" name="time" /></td>
+  </tr>
+  <tr rowspan="3">
+  <td>Content:</td> <td colspan="3"><textarea name="content"></textarea></td>
+  </tr>
+  <tr>
+    <td colspan="4"><button type="submit">Submit</button></td>
+  </tr>
   </form>
 </div>
 </body>

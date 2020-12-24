@@ -15,13 +15,14 @@
 <div id="main">
 <?php
 try {
-  $db = new PDO('pgsql:dbname=vagrant;host=localhost','vagrant','password');
+  $db = new PDO('pgsql:dbname=ubuntu;host=localhost','ubuntu','password');
   $data = $db->query('SELECT * FROM news ORDER BY id DESC');
   while($row = $data->fetch()) {
     echo '<div class="newscon">';
-    echo '<h2>'.$row['title'].'</h2>';
+    echo '<h2><a href="'.$row['url'].'">'.$row['title'].'</a></h2>';
     echo '<h5>'.$row['author'].'</h5>';
     echo '<h5>'.$row['time'].'</h5>';
+    echo '<img src="'.$row['img'].'" class="newsimg" />';
     echo '<h4>'.$row['m'].'</h4>';
     echo '</div>';
   };

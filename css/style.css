@@ -41,6 +41,9 @@ header h1 {
   padding-top: 10px;
   border-bottom: rgba(0, 0, 0, 0.678) 2px solid;
 }
+.newscon h5 {
+  margin: 0 10px;
+}
 .side-focus {
   text-align: center;
   height: 40px;
@@ -57,4 +60,18 @@ header h1 {
 }
 .sidebut:hover {
   background-color: rgb(255, 255, 255);
+}
+
+.newsimg {
+  width: 300px;
+}
+#main td {
+  width: 300px;
+}
+#main textarea {
+  width: 100%;
+  height: 300px;
+}
+#main input {
+  width: 100%;
 }
